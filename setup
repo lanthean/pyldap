@@ -1,0 +1,6 @@
+#!/bin/bash
+# Install virtualenv and devel requirements
+pip install virtualenv
+yum install python-devel openldap-devel
+
+virtualenv ./
