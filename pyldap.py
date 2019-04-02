@@ -9,7 +9,7 @@
 ###
 
 # Imports
-ldap
+import ldap
 
 ## TODO
 # place your code here (eg> class and function definitions),
