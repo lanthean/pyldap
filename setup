@@ -1,16 +1,21 @@
 #!/bin/bash
+INSTALL_PATH=/opt/pyldap
 # Install virtualenv and devel requirements
 pip install virtualenv
 yum install python-devel openldap-devel
 
-# create virtualenv here ./
+# create virtualenv in install_path
+pushd $INSTALL_PATH
 virtualenv ./
 # activate the virtualenv
 source bin/activate
 # install dependencies into the virtualenv
-pip install dependecies/*
+pip install dependencies/*
 # leave
 deactivate
+
+# come back to original path
+popd
 
 # say smth
 echo ""
