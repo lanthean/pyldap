@@ -3,4 +3,19 @@
 pip install virtualenv
 yum install python-devel openldap-devel
 
+# create virtualenv here ./
 virtualenv ./
+# activate the virtualenv
+source bin/activate
+# install dependencies into the virtualenv
+pip install dependecies/*
+# leave
+deactivate
+
+# say smth
+echo ""
+echo "+----------------------------------------------------+"
+echo "| To use the virtualenv run 'source bin/activate'    |"
+echo "| and to get out of the virtualenv run 'deactivate'. |"
+echo "| Cheers dev                                         |"
+echo "+----------------------------------------------------+"
